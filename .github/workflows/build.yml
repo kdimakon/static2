@@ -35,4 +35,5 @@ jobs:
       - name: Checking healt of site
         uses: jtalk/url-health-check-action@v3
         with:
-          url: ${{ secrets.SITE_URL }}
+          url: https://kdimakon.github.io/static2/
+          retry-delay: 5s
